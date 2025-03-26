@@ -1,14 +1,13 @@
 addIngredient("human",{
     type:"meat",
     color:"#b81d32",
-    keywords:"flesh",
+    keywords:"flesh","meat",
 });
 addIngredient("fetus",{
     color:"#fa8989",
     type:"meat",
     shape:"embryo",
   keywords:"human,embryo,baby",
-
 });
 addIngredient("hand",{
     color:"#ffaf87",
@@ -31,7 +30,7 @@ addIngredient("infected_blood",{
     color:"d40047",
     type:"liquid",
   adj:"infected",
-  keywords:"human,infection,bacteria",
+    hidden:true,
 });
 addIngredient("heart",{
     type:"meat",
@@ -44,6 +43,7 @@ addIngredient("intenstines",{
     type:"meat",
     color:"bf2654",
   shape:"noodles",
+    scale:"1.5",
   keywords:"human,organ",
 });
 addIngredient("brain",{
@@ -51,6 +51,7 @@ addIngredient("brain",{
     color:"f23d67",
   shape:"brain",
   adj:"intelligent",
+    scale:"1.25",
   keywords:"human,organ",
 });
 addIngredient("stomach",{
@@ -63,6 +64,7 @@ addIngredient("liver",{
     type:"meat",
     color:"6b1c1c",
   shape:"bean_l",
+    scale:"1.25",
   keywords:"human,organ",
 });
 addIngredient("kidney",{
@@ -77,7 +79,7 @@ addIngredient("ear",{
   shape:"ear",
   keywords:"human,organ",
 });
-addIngredient("eye",{
+addIngredient("eyeball",{
     type:"meat",
     color:"ffadad",
   shape:"ball_strung",
@@ -87,5 +89,8 @@ addRecipe("fetus+poison","abortion");
 addRecipe("fetus+knife","abortion");
 addRecipe("broth+brain","brain_stew");
 addRecipe("alcohol+liver","hepatitis");
-addRecipe("beer+liver","hepatitis");
 addRecipe("hand+hand","high_five!");
+addRecipe("blood+alcohol","really_bloody_mary");
+addRecipe("brain+ice_cream","brain_freeze");
+addRecipe("brain+ice_cube","brain_freeze");
+addRecipe("kidney+rock","kidney_stone");
